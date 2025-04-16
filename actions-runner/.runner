@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 2,
+  "agentName": "grisha",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus5.actions.githubusercontent.com/0wQjaOheEfxSLcxUXTTDf7v2W8Oi9QWFpSBZRbURgOKlg08FeQ/",
+  "gitHubUrl": "https://github.com/grisha-topolev/courseproject",
+  "workFolder": "_work"
+}

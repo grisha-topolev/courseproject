@@ -1,0 +1,26 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Build Docker image
+        run: docker build -t my-python-app .
+
+      - name: Stop previous container
+        run: docker stop my-python-app || true
+
+      - name: Remove previous container
+        run: docker rm my-python-app || true
+
+      - name: Run new container
+        run: docker run -d -p 80:80 --name my-python-app my-python-app
