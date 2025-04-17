@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "grisha-topolev/courseproject",
+  "pipelineDirectory": "courseproject",
+  "workspaceDirectory": "courseproject/courseproject",
+  "repositories": {
+    "grisha-topolev/courseproject": {
+      "repositoryPath": "courseproject/courseproject",
+      "lastRunOn": "04/17/2025 12:44:32 +03:00"
+    }
+  },
+  "lastRunOn": "04/17/2025 12:44:32 +03:00"
+}

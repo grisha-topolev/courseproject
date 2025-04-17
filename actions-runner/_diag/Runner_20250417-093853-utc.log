@@ -1,0 +1,172 @@
+[2025-04-17 09:38:53Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-04-17 09:38:53Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-17 09:38:53Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-17 09:38:53Z INFO HostContext] Well known config file 'Credentials': '/home/aprelix/courseproject/courseproject/actions-runner/.credentials'
+[2025-04-17 09:38:53Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-17 09:38:53Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-17 09:38:53Z INFO HostContext] Well known config file 'Runner': '/home/aprelix/courseproject/courseproject/actions-runner/.runner'
+[2025-04-17 09:38:53Z INFO Listener] Runner is built for Linux (Arm64) - linux-arm64.
+[2025-04-17 09:38:53Z INFO Listener] RuntimeInformation: Ubuntu 24.10.
+[2025-04-17 09:38:53Z INFO Listener] Version: 2.323.0
+[2025-04-17 09:38:53Z INFO Listener] Commit: d8b82f44a9ec0258904d5869ae683c31d5aac299
+[2025-04-17 09:38:53Z INFO Listener] Culture: en-US
+[2025-04-17 09:38:53Z INFO Listener] UI Culture: en-US
+[2025-04-17 09:38:53Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-17 09:38:53Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-17 09:38:53Z INFO Listener] Validating directory permissions for: '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-17 09:38:53Z INFO CommandLineParser] Parse
+[2025-04-17 09:38:53Z INFO CommandLineParser] Parsing 5 args
+[2025-04-17 09:38:53Z INFO CommandLineParser] parsing argument
+[2025-04-17 09:38:53Z INFO CommandLineParser] HasArgs: False
+[2025-04-17 09:38:53Z INFO CommandLineParser] Adding Command: configure
+[2025-04-17 09:38:53Z INFO CommandLineParser] parsing argument
+[2025-04-17 09:38:53Z INFO CommandLineParser] HasArgs: True
+[2025-04-17 09:38:53Z INFO CommandLineParser] arg: url
+[2025-04-17 09:38:53Z INFO CommandLineParser] parsing argument
+[2025-04-17 09:38:53Z INFO CommandLineParser] HasArgs: True
+[2025-04-17 09:38:53Z INFO CommandLineParser] Adding option 'url': 'https://github.com/grisha-topolev/courseproject'
+[2025-04-17 09:38:53Z INFO CommandLineParser] parsing argument
+[2025-04-17 09:38:53Z INFO CommandLineParser] HasArgs: True
+[2025-04-17 09:38:53Z INFO CommandLineParser] arg: token
+[2025-04-17 09:38:53Z INFO CommandLineParser] parsing argument
+[2025-04-17 09:38:53Z INFO CommandLineParser] HasArgs: True
+[2025-04-17 09:38:53Z INFO CommandLineParser] Adding option 'token': '***'
+[2025-04-17 09:38:53Z INFO Listener] Arguments parsed
+[2025-04-17 09:38:53Z INFO Runner] ExecuteCommand
+[2025-04-17 09:38:53Z INFO ConfigurationStore] currentAssemblyLocation: /home/aprelix/courseproject/courseproject/actions-runner/bin/Runner.Listener.dll
+[2025-04-17 09:38:53Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-17 09:38:53Z INFO ConfigurationStore] binPath: /home/aprelix/courseproject/courseproject/actions-runner/bin
+[2025-04-17 09:38:53Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-17 09:38:53Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-17 09:38:53Z INFO ConfigurationStore] RootFolder: /home/aprelix/courseproject/courseproject/actions-runner
+[2025-04-17 09:38:53Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-17 09:38:53Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-17 09:38:53Z INFO HostContext] Well known config file 'Runner': '/home/aprelix/courseproject/courseproject/actions-runner/.runner'
+[2025-04-17 09:38:53Z INFO ConfigurationStore] ConfigFilePath: /home/aprelix/courseproject/courseproject/actions-runner/.runner
+[2025-04-17 09:38:53Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-17 09:38:53Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-17 09:38:53Z INFO HostContext] Well known config file 'MigratedRunner': '/home/aprelix/courseproject/courseproject/actions-runner/.runner_migrated'
+[2025-04-17 09:38:53Z INFO ConfigurationStore] MigratedConfigFilePath: /home/aprelix/courseproject/courseproject/actions-runner/.runner_migrated
+[2025-04-17 09:38:53Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-17 09:38:53Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-17 09:38:53Z INFO HostContext] Well known config file 'Credentials': '/home/aprelix/courseproject/courseproject/actions-runner/.credentials'
+[2025-04-17 09:38:53Z INFO ConfigurationStore] CredFilePath: /home/aprelix/courseproject/courseproject/actions-runner/.credentials
+[2025-04-17 09:38:53Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-17 09:38:53Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-17 09:38:53Z INFO HostContext] Well known config file 'MigratedCredentials': '/home/aprelix/courseproject/courseproject/actions-runner/.credentials_migrated'
+[2025-04-17 09:38:53Z INFO ConfigurationStore] MigratedCredFilePath: /home/aprelix/courseproject/courseproject/actions-runner/.credentials_migrated
+[2025-04-17 09:38:53Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-17 09:38:53Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-17 09:38:53Z INFO HostContext] Well known config file 'Service': '/home/aprelix/courseproject/courseproject/actions-runner/.service'
+[2025-04-17 09:38:53Z INFO ConfigurationStore] ServiceConfigFilePath: /home/aprelix/courseproject/courseproject/actions-runner/.service
+[2025-04-17 09:38:53Z INFO CommandSettings] Flag 'help': 'False'
+[2025-04-17 09:38:53Z INFO CommandSettings] Flag 'version': 'False'
+[2025-04-17 09:38:53Z INFO CommandSettings] Flag 'commit': 'False'
+[2025-04-17 09:38:53Z INFO CommandSettings] Flag 'check': 'False'
+[2025-04-17 09:38:53Z INFO CommandSettings] Command 'configure': 'True'
+[2025-04-17 09:38:53Z INFO Terminal] WRITE LINE: 
+[2025-04-17 09:38:53Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2025-04-17 09:38:53Z INFO Terminal] WRITE LINE: |        ____ _ _   _   _       _          _        _   _                      |
+[2025-04-17 09:38:53Z INFO Terminal] WRITE LINE: |       / ___(_) |_| | | |_   _| |__      / \   ___| |_(_) ___  _ __  ___      |
+[2025-04-17 09:38:53Z INFO Terminal] WRITE LINE: |      | |  _| | __| |_| | | | | '_ \    / _ \ / __| __| |/ _ \| '_ \/ __|     |
+[2025-04-17 09:38:53Z INFO Terminal] WRITE LINE: |      | |_| | | |_|  _  | |_| | |_) |  / ___ \ (__| |_| | (_) | | | \__ \     |
+[2025-04-17 09:38:53Z INFO Terminal] WRITE LINE: |       \____|_|\__|_| |_|\__,_|_.__/  /_/   \_\___|\__|_|\___/|_| |_|___/     |
+[2025-04-17 09:38:53Z INFO Terminal] WRITE LINE: |                                                                              |
+[2025-04-17 09:38:53Z INFO Terminal] WRITE: |                       
+[2025-04-17 09:38:53Z INFO Terminal] WRITE: Self-hosted runner registration
+[2025-04-17 09:38:53Z INFO Terminal] WRITE LINE:                         |
+[2025-04-17 09:38:53Z INFO Terminal] WRITE LINE: |                                                                              |
+[2025-04-17 09:38:53Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2025-04-17 09:38:53Z INFO ConfigurationManager] ConfigureAsync
+[2025-04-17 09:38:53Z INFO CommandSettings] Flag 'generateServiceConfig': 'False'
+[2025-04-17 09:38:53Z INFO ConfigurationStore] IsConfigured()
+[2025-04-17 09:38:53Z INFO ConfigurationStore] IsConfigured: False
+[2025-04-17 09:38:53Z INFO ConfigurationManager] Is configured: False
+[2025-04-17 09:38:53Z INFO CommandSettings] Arg 'url': 'https://github.com/grisha-topolev/courseproject'
+[2025-04-17 09:38:53Z INFO CommandSettings] Remove url from Arg dictionary.
+[2025-04-17 09:38:53Z INFO CommandSettings] Arg 'token': '***'
+[2025-04-17 09:38:53Z INFO CommandSettings] Remove token from Arg dictionary.
+[2025-04-17 09:38:54Z INFO ConfigurationManager] Http response code: OK from 'POST https://api.github.com/actions/runner-registration' (9661:35962A:84AE66:87BAD2:6800CC2D)
+[2025-04-17 09:38:54Z INFO ConfigurationManager] Using V2 flow: False
+[2025-04-17 09:38:54Z INFO ConfigurationManager] cred retrieved via GitHub auth
+[2025-04-17 09:38:54Z INFO RunnerServer] EstablishVssConnection
+[2025-04-17 09:38:54Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-04-17 09:38:54Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-04-17 09:38:54Z INFO RunnerServer] EstablishVssConnection
+[2025-04-17 09:38:54Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-04-17 09:38:54Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-04-17 09:38:54Z INFO RunnerServer] EstablishVssConnection
+[2025-04-17 09:38:54Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-04-17 09:38:54Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-04-17 09:39:54Z WARN GitHubActionsService] GET request to https://pipelinesghubeus5.actions.githubusercontent.com/0wQjaOheEfxSLcxUXTTDf7v2W8Oi9QWFpSBZRbURgOKlg08FeQ/_apis/connectionData?connectOptions=1&lastChangeId=5046275&lastChangeId64=5046275 timed out after 60 seconds.
+[2025-04-17 09:39:54Z WARN GitHubActionsService] GET request to https://pipelinesghubeus5.actions.githubusercontent.com/0wQjaOheEfxSLcxUXTTDf7v2W8Oi9QWFpSBZRbURgOKlg08FeQ/_apis/connectionData?connectOptions=1&lastChangeId=5046275&lastChangeId64=5046275 timed out after 60 seconds.
+[2025-04-17 09:39:54Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-04-17 09:39:54Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-04-17 09:39:54Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-04-17 09:39:54Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-04-17 09:40:34Z WARN GitHubActionsService] GET request to https://pipelinesghubeus5.actions.githubusercontent.com/0wQjaOheEfxSLcxUXTTDf7v2W8Oi9QWFpSBZRbURgOKlg08FeQ/_apis/connectionData?connectOptions=1&lastChangeId=5046275&lastChangeId64=5046275 timed out after 100 seconds.
+[2025-04-17 09:40:34Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-04-17 09:40:34Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-04-17 09:40:54Z WARN GitHubActionsService] GET request to https://pipelinesghubeus5.actions.githubusercontent.com/0wQjaOheEfxSLcxUXTTDf7v2W8Oi9QWFpSBZRbURgOKlg08FeQ/_apis/connectionData?connectOptions=1&lastChangeId=5046275&lastChangeId64=5046275 timed out after 60 seconds.
+[2025-04-17 09:40:54Z WARN GitHubActionsService] GET request to https://pipelinesghubeus5.actions.githubusercontent.com/0wQjaOheEfxSLcxUXTTDf7v2W8Oi9QWFpSBZRbURgOKlg08FeQ/_apis/connectionData?connectOptions=1&lastChangeId=5046275&lastChangeId64=5046275 timed out after 60 seconds.
+[2025-04-17 09:40:54Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-04-17 09:40:54Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-04-17 09:40:54Z INFO RunnerServer] Catch exception during connect. 4 attempt left.
+[2025-04-17 09:40:54Z INFO RunnerServer] Catch exception during connect. 4 attempt left.
+[2025-04-17 09:40:54Z ERR  RunnerServer] System.TimeoutException: The HTTP request timed out after 00:01:00.
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at GitHub.Services.Common.VssHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpRequestMessage message, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.Location.Client.LocationHttpClient.GetConnectionDataAsync(ConnectOptions connectOptions, Int64 lastChangeId, CancellationToken cancellationToken, Object userState)
+   at GitHub.Services.WebApi.Location.VssServerDataProvider.GetConnectionDataAsync(ConnectOptions connectOptions, Int32 lastChangeId, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.Location.VssServerDataProvider.ConnectAsync(ConnectOptions connectOptions, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.RunnerService.EstablishVssConnection(Uri serverUrl, VssCredentials credentials, TimeSpan timeout)
+[2025-04-17 09:40:54Z ERR  RunnerServer] #####################################################
+[2025-04-17 09:40:54Z ERR  RunnerServer] System.TimeoutException: The HTTP request timed out after 00:01:00.
+ ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at GitHub.Services.Common.VssHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpRequestMessage message, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.Location.Client.LocationHttpClient.GetConnectionDataAsync(ConnectOptions connectOptions, Int64 lastChangeId, CancellationToken cancellationToken, Object userState)
+   at GitHub.Services.WebApi.Location.VssServerDataProvider.GetConnectionDataAsync(ConnectOptions connectOptions, Int32 lastChangeId, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.Location.VssServerDataProvider.ConnectAsync(ConnectOptions connectOptions, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.RunnerService.EstablishVssConnection(Uri serverUrl, VssCredentials credentials, TimeSpan timeout)
+[2025-04-17 09:40:54Z ERR  RunnerServer] #####################################################
+[2025-04-17 09:40:54Z ERR  RunnerServer] System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+[2025-04-17 09:40:54Z ERR  RunnerServer] System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+[2025-04-17 09:40:54Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-04-17 09:40:54Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-04-17 09:41:54Z WARN GitHubActionsService] GET request to https://pipelinesghubeus5.actions.githubusercontent.com/0wQjaOheEfxSLcxUXTTDf7v2W8Oi9QWFpSBZRbURgOKlg08FeQ/_apis/connectionData?connectOptions=1&lastChangeId=5046275&lastChangeId64=5046275 timed out after 60 seconds.
+[2025-04-17 09:41:54Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-04-17 09:41:54Z WARN GitHubActionsService] GET request to https://pipelinesghubeus5.actions.githubusercontent.com/0wQjaOheEfxSLcxUXTTDf7v2W8Oi9QWFpSBZRbURgOKlg08FeQ/_apis/connectionData?connectOptions=1&lastChangeId=5046275&lastChangeId64=5046275 timed out after 60 seconds.
+[2025-04-17 09:41:54Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-04-17 09:41:54Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-04-17 09:41:54Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-04-17 09:42:02Z INFO Terminal] WRITE LINE: Exiting...

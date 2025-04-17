@@ -23,4 +23,4 @@ jobs:
         run: docker rm my-python-app || true
 
       - name: Run new container
-        run: docker run -d -p 80:80 --name my-python-app my-python-app
+        run: docker run -d -p 8080:80 --name my-python-app my-python-app
