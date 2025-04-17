@@ -166,3 +166,48 @@
 [2025-04-17 09:45:41Z INFO JobNotification] Entering JobCompleted Notification
 [2025-04-17 09:45:41Z INFO JobNotification] Entering EndMonitor
 [2025-04-17 09:45:41Z INFO MessageListener] Received job status event. JobState: Online
+[2025-04-17 09:51:35Z INFO MessageListener] Message '1708437224326036915' received from session '02c1ae47-d561-4896-ac64-30c24b2da92e'.
+[2025-04-17 09:51:35Z INFO ConfigurationStore] HasCredentials()
+[2025-04-17 09:51:35Z INFO ConfigurationStore] stored True
+[2025-04-17 09:51:35Z INFO CredentialManager] GetCredentialProvider
+[2025-04-17 09:51:35Z INFO CredentialManager] Creating type OAuth
+[2025-04-17 09:51:35Z INFO CredentialManager] Creating credential type: OAuth
+[2025-04-17 09:51:35Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 09:51:35Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 09:51:35Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 09:51:36Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-17 09:51:37Z INFO JobDispatcher] Job request 0 for plan 84226c6c-37c1-417c-9172-fabcaa15d8f0 job 82a8f648-05b4-5fc8-a7f8-d5f65054751c received.
+[2025-04-17 09:51:37Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-04-17 09:51:37Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-04-17 09:51:37Z INFO JobDispatcher] Job request c06d4b5c-2f38-5aef-825a-805a37504054 processed succeed.
+[2025-04-17 09:51:37Z INFO Terminal] WRITE LINE: 2025-04-17 09:51:37Z: Running job: build-deploy
+[2025-04-17 09:51:37Z INFO JobDispatcher] Start renew job request 0 for job 82a8f648-05b4-5fc8-a7f8-d5f65054751c.
+[2025-04-17 09:51:37Z INFO JobDispatcher] Successfully renew job 82a8f648-05b4-5fc8-a7f8-d5f65054751c, job is valid till 4/17/2025 10:01:37 AM
+[2025-04-17 09:51:37Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-17 09:51:37Z INFO ProcessInvokerWrapper] Starting process:
+[2025-04-17 09:51:37Z INFO ProcessInvokerWrapper]   File name: '/home/aprelix/courseproject/courseproject/actions-runner/bin/Runner.Worker'
+[2025-04-17 09:51:37Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 149 152'
+[2025-04-17 09:51:37Z INFO ProcessInvokerWrapper]   Working directory: '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-17 09:51:37Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-04-17 09:51:37Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-04-17 09:51:37Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-04-17 09:51:37Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-04-17 09:51:37Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-04-17 09:51:37Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-04-17 09:51:37Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-04-17 09:51:37Z INFO ProcessInvokerWrapper] Process started with process id 6739, waiting for process exit.
+[2025-04-17 09:51:37Z INFO JobDispatcher] Send job request message to worker for job 82a8f648-05b4-5fc8-a7f8-d5f65054751c.
+[2025-04-17 09:51:37Z INFO ProcessChannel] Sending message of length 20037, with hash '3406f36195e1e6326eb41efd1d04dd9348ec85b5376e453aa654f10295b517a9'
+[2025-04-17 09:51:37Z INFO JobNotification] Entering JobStarted Notification
+[2025-04-17 09:51:37Z INFO JobNotification] Entering StartMonitor
+[2025-04-17 09:52:08Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-17 09:52:08Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-17 09:52:08Z INFO ProcessInvokerWrapper] Finished process 6739 with exit code 100, and elapsed time 00:00:31.2576235.
+[2025-04-17 09:52:08Z INFO JobDispatcher] Worker finished for job 82a8f648-05b4-5fc8-a7f8-d5f65054751c. Code: 100
+[2025-04-17 09:52:08Z INFO JobDispatcher] finish job request for job 82a8f648-05b4-5fc8-a7f8-d5f65054751c with result: Succeeded
+[2025-04-17 09:52:08Z INFO Terminal] WRITE LINE: 2025-04-17 09:52:08Z: Job build-deploy completed with result: Succeeded
+[2025-04-17 09:52:08Z INFO JobDispatcher] Stop renew job request for job 82a8f648-05b4-5fc8-a7f8-d5f65054751c.
+[2025-04-17 09:52:08Z INFO JobDispatcher] job renew has been cancelled, stop renew job 82a8f648-05b4-5fc8-a7f8-d5f65054751c.
+[2025-04-17 09:52:08Z INFO JobNotification] Entering JobCompleted Notification
+[2025-04-17 09:52:08Z INFO JobNotification] Entering EndMonitor
+[2025-04-17 09:52:08Z INFO MessageListener] Received job status event. JobState: Online
