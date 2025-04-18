@@ -211,3 +211,596 @@
 [2025-04-17 09:52:08Z INFO JobNotification] Entering JobCompleted Notification
 [2025-04-17 09:52:08Z INFO JobNotification] Entering EndMonitor
 [2025-04-17 09:52:08Z INFO MessageListener] Received job status event. JobState: Online
+[2025-04-17 09:54:25Z INFO MessageListener] Message '7496247445430543745' received from session '02c1ae47-d561-4896-ac64-30c24b2da92e'.
+[2025-04-17 09:54:25Z INFO ConfigurationStore] HasCredentials()
+[2025-04-17 09:54:25Z INFO ConfigurationStore] stored True
+[2025-04-17 09:54:25Z INFO CredentialManager] GetCredentialProvider
+[2025-04-17 09:54:25Z INFO CredentialManager] Creating type OAuth
+[2025-04-17 09:54:25Z INFO CredentialManager] Creating credential type: OAuth
+[2025-04-17 09:54:25Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 09:54:25Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 09:54:25Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 09:54:26Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-17 09:54:27Z INFO JobDispatcher] Job request 0 for plan de0ff24d-77bf-473b-b503-7f9220f43183 job 6177cfdc-515f-5950-8077-fb8955e65a8b received.
+[2025-04-17 09:54:27Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-04-17 09:54:27Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-04-17 09:54:27Z INFO JobDispatcher] Job request 82a8f648-05b4-5fc8-a7f8-d5f65054751c processed succeed.
+[2025-04-17 09:54:27Z INFO Terminal] WRITE LINE: 2025-04-17 09:54:27Z: Running job: build-deploy
+[2025-04-17 09:54:27Z INFO JobDispatcher] Start renew job request 0 for job 6177cfdc-515f-5950-8077-fb8955e65a8b.
+[2025-04-17 09:54:27Z INFO JobDispatcher] Successfully renew job 6177cfdc-515f-5950-8077-fb8955e65a8b, job is valid till 4/17/2025 10:04:27 AM
+[2025-04-17 09:54:27Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-17 09:54:27Z INFO ProcessInvokerWrapper] Starting process:
+[2025-04-17 09:54:27Z INFO ProcessInvokerWrapper]   File name: '/home/aprelix/courseproject/courseproject/actions-runner/bin/Runner.Worker'
+[2025-04-17 09:54:27Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 143 151'
+[2025-04-17 09:54:27Z INFO ProcessInvokerWrapper]   Working directory: '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-17 09:54:27Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-04-17 09:54:27Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-04-17 09:54:27Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-04-17 09:54:27Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-04-17 09:54:27Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-04-17 09:54:27Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-04-17 09:54:27Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-04-17 09:54:27Z INFO ProcessInvokerWrapper] Process started with process id 7414, waiting for process exit.
+[2025-04-17 09:54:27Z INFO JobDispatcher] Send job request message to worker for job 6177cfdc-515f-5950-8077-fb8955e65a8b.
+[2025-04-17 09:54:27Z INFO ProcessChannel] Sending message of length 20039, with hash '3589fb7994c68642089cfe58ddc78b842ae01c022f4ea404081737dbb9b98c8d'
+[2025-04-17 09:54:27Z INFO JobNotification] Entering JobStarted Notification
+[2025-04-17 09:54:27Z INFO JobNotification] Entering StartMonitor
+[2025-04-17 09:55:28Z INFO JobDispatcher] Successfully renew job 6177cfdc-515f-5950-8077-fb8955e65a8b, job is valid till 4/17/2025 10:05:27 AM
+[2025-04-17 09:55:56Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-17 09:55:56Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-17 09:55:56Z INFO ProcessInvokerWrapper] Finished process 7414 with exit code 100, and elapsed time 00:01:29.2530130.
+[2025-04-17 09:55:56Z INFO JobDispatcher] Worker finished for job 6177cfdc-515f-5950-8077-fb8955e65a8b. Code: 100
+[2025-04-17 09:55:56Z INFO JobDispatcher] finish job request for job 6177cfdc-515f-5950-8077-fb8955e65a8b with result: Succeeded
+[2025-04-17 09:55:56Z INFO Terminal] WRITE LINE: 2025-04-17 09:55:56Z: Job build-deploy completed with result: Succeeded
+[2025-04-17 09:55:56Z INFO JobDispatcher] Stop renew job request for job 6177cfdc-515f-5950-8077-fb8955e65a8b.
+[2025-04-17 09:55:56Z INFO JobDispatcher] job renew has been cancelled, stop renew job 6177cfdc-515f-5950-8077-fb8955e65a8b.
+[2025-04-17 09:55:56Z INFO JobNotification] Entering JobCompleted Notification
+[2025-04-17 09:55:56Z INFO JobNotification] Entering EndMonitor
+[2025-04-17 09:55:56Z INFO MessageListener] Received job status event. JobState: Online
+[2025-04-17 10:24:40Z INFO MessageListener] No message retrieved from session '02c1ae47-d561-4896-ac64-30c24b2da92e' within last 30 minutes.
+[2025-04-17 10:33:55Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 10:33:55Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-17 10:38:58Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 10:38:58Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-17 10:52:23Z WARN GitHubActionsService] GET request to https://broker.actions.githubusercontent.com/message?sessionId=02c1ae47-d561-4896-ac64-30c24b2da92e&status=Online&runnerVersion=2.323.0&os=Linux&architecture=ARM64&disableUpdate=false timed out after 100 seconds.
+[2025-04-17 10:52:23Z ERR  BrokerServer] Catch exception during request
+[2025-04-17 10:52:23Z ERR  BrokerServer] System.TimeoutException: The HTTP request timed out after 00:01:40.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Operation canceled.
+ ---> System.Net.Sockets.SocketException (125): Operation canceled
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass7_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+[2025-04-17 10:52:23Z ERR  BrokerServer] #####################################################
+[2025-04-17 10:52:23Z ERR  BrokerServer] System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: Operation canceled.
+ ---> System.Net.Sockets.SocketException (125): Operation canceled
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+[2025-04-17 10:52:23Z ERR  BrokerServer] #####################################################
+[2025-04-17 10:52:23Z ERR  BrokerServer] System.IO.IOException: Unable to read data from the transport connection: Operation canceled.
+ ---> System.Net.Sockets.SocketException (125): Operation canceled
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+[2025-04-17 10:52:23Z ERR  BrokerServer] #####################################################
+[2025-04-17 10:52:23Z ERR  BrokerServer] System.Net.Sockets.SocketException (125): Operation canceled
+[2025-04-17 10:52:23Z WARN BrokerServer] Back off 11.109 seconds before next retry. 4 attempt left.
+[2025-04-17 10:55:06Z INFO MessageListener] No message retrieved from session '02c1ae47-d561-4896-ac64-30c24b2da92e' within last 30 minutes.
+[2025-04-17 11:04:21Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 11:04:21Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fc1cf2da-3872-4d18-92a9-f6155d9e1df6 failed. HTTP Status: BadRequest
+[2025-04-17 11:04:21Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-17 11:04:21Z ERR  BrokerServer] Catch exception during request
+[2025-04-17 11:04:21Z ERR  BrokerServer] GitHub.Services.OAuth.VssOAuthTokenRequestException: The token expired on 04/17/2025 11:09:21. Current server time is 04/17/2025 11:24:15.
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass7_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+[2025-04-17 11:04:21Z WARN BrokerServer] Back off 7.881 seconds before next retry. 4 attempt left.
+[2025-04-17 11:04:29Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 11:04:30Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fc1cf2da-3872-4d18-92a9-f6155d9e1df6 failed. HTTP Status: BadRequest
+[2025-04-17 11:04:30Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-17 11:04:30Z ERR  BrokerServer] Catch exception during request
+[2025-04-17 11:04:30Z ERR  BrokerServer] GitHub.Services.OAuth.VssOAuthTokenRequestException: The token expired on 04/17/2025 11:09:30. Current server time is 04/17/2025 11:24:24.
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass7_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+[2025-04-17 11:04:30Z WARN BrokerServer] Back off 6.18 seconds before next retry. 3 attempt left.
+[2025-04-17 11:04:36Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 11:04:37Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fc1cf2da-3872-4d18-92a9-f6155d9e1df6 failed. HTTP Status: BadRequest
+[2025-04-17 11:04:37Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-17 11:04:37Z ERR  BrokerServer] Catch exception during request
+[2025-04-17 11:04:37Z ERR  BrokerServer] GitHub.Services.OAuth.VssOAuthTokenRequestException: The token expired on 04/17/2025 11:09:37. Current server time is 04/17/2025 11:24:31.
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass7_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+[2025-04-17 11:04:37Z WARN BrokerServer] Back off 14.918 seconds before next retry. 2 attempt left.
+[2025-04-17 11:04:52Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 11:04:53Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fc1cf2da-3872-4d18-92a9-f6155d9e1df6 failed. HTTP Status: BadRequest
+[2025-04-17 11:04:53Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-17 11:04:53Z ERR  BrokerServer] Catch exception during request
+[2025-04-17 11:04:53Z ERR  BrokerServer] GitHub.Services.OAuth.VssOAuthTokenRequestException: The token expired on 04/17/2025 11:09:52. Current server time is 04/17/2025 11:24:46.
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass7_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+[2025-04-17 11:04:53Z WARN BrokerServer] Back off 10.673 seconds before next retry. 1 attempt left.
+[2025-04-17 11:05:03Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 11:05:04Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fc1cf2da-3872-4d18-92a9-f6155d9e1df6 failed. HTTP Status: BadRequest
+[2025-04-17 11:05:04Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-17 11:05:04Z ERR  MessageListener] Catch exception during get next message.
+[2025-04-17 11:05:04Z ERR  MessageListener] GitHub.Services.OAuth.VssOAuthTokenRequestException: The token expired on 04/17/2025 11:10:04. Current server time is 04/17/2025 11:24:58.
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass7_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+   at GitHub.Runner.Listener.MessageListener.GetNextMessageAsync(CancellationToken token)
+[2025-04-17 11:05:04Z INFO MessageListener] Retriable exception: The token expired on 04/17/2025 11:10:04. Current server time is 04/17/2025 11:24:58.
+[2025-04-17 11:05:04Z ERR  Terminal] WRITE ERROR: 2025-04-17 11:05:04Z: Runner connect error: The token expired on 04/17/2025 11:10:04. Current server time is 04/17/2025 11:24:58.. Retrying until reconnected.
+[2025-04-17 11:05:04Z INFO RunnerServer] Refresh MessageQueue VssConnection to get on a different AFD node.
+[2025-04-17 11:05:04Z INFO RunnerServer] EstablishVssConnection
+[2025-04-17 11:05:04Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-04-17 11:05:04Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-04-17 11:05:05Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-04-17 11:05:05Z INFO MessageListener] Sleeping for 25.893 seconds before retrying.
+[2025-04-17 11:05:31Z INFO MessageListener] Message '0' received from session '02c1ae47-d561-4896-ac64-30c24b2da92e'.
+[2025-04-17 11:05:31Z ERR  Runner] Received message 0 with unsupported message type BrokerMigration.
+[2025-04-17 11:05:32Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 11:05:33Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fc1cf2da-3872-4d18-92a9-f6155d9e1df6 failed. HTTP Status: BadRequest
+[2025-04-17 11:05:33Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-17 11:05:33Z ERR  BrokerServer] Catch exception during request
+[2025-04-17 11:05:33Z ERR  BrokerServer] GitHub.Services.OAuth.VssOAuthTokenRequestException: The token expired on 04/17/2025 11:10:33. Current server time is 04/17/2025 11:25:26.
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass7_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+[2025-04-17 11:05:33Z WARN BrokerServer] Back off 7.107 seconds before next retry. 4 attempt left.
+[2025-04-17 11:05:40Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 11:05:41Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fc1cf2da-3872-4d18-92a9-f6155d9e1df6 failed. HTTP Status: BadRequest
+[2025-04-17 11:05:41Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-17 11:05:41Z ERR  BrokerServer] Catch exception during request
+[2025-04-17 11:05:41Z ERR  BrokerServer] GitHub.Services.OAuth.VssOAuthTokenRequestException: The token expired on 04/17/2025 11:10:41. Current server time is 04/17/2025 11:25:35.
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass7_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+[2025-04-17 11:05:41Z WARN BrokerServer] Back off 10.088 seconds before next retry. 3 attempt left.
+[2025-04-17 11:05:51Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 11:05:52Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fc1cf2da-3872-4d18-92a9-f6155d9e1df6 failed. HTTP Status: BadRequest
+[2025-04-17 11:05:52Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-17 11:05:52Z ERR  BrokerServer] Catch exception during request
+[2025-04-17 11:05:52Z ERR  BrokerServer] GitHub.Services.OAuth.VssOAuthTokenRequestException: The token expired on 04/17/2025 11:10:52. Current server time is 04/17/2025 11:25:46.
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass7_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+[2025-04-17 11:05:52Z WARN BrokerServer] Back off 13.072 seconds before next retry. 2 attempt left.
+[2025-04-17 11:06:05Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 11:06:06Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fc1cf2da-3872-4d18-92a9-f6155d9e1df6 failed. HTTP Status: BadRequest
+[2025-04-17 11:06:06Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-17 11:06:06Z ERR  BrokerServer] Catch exception during request
+[2025-04-17 11:06:06Z ERR  BrokerServer] GitHub.Services.OAuth.VssOAuthTokenRequestException: The token expired on 04/17/2025 11:11:06. Current server time is 04/17/2025 11:26:00.
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass7_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+[2025-04-17 11:06:06Z WARN BrokerServer] Back off 8.711 seconds before next retry. 1 attempt left.
+[2025-04-17 11:06:15Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 11:06:15Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fc1cf2da-3872-4d18-92a9-f6155d9e1df6 failed. HTTP Status: BadRequest
+[2025-04-17 11:06:15Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-17 11:06:15Z ERR  MessageListener] Catch exception during get next message.
+[2025-04-17 11:06:15Z ERR  MessageListener] GitHub.Services.OAuth.VssOAuthTokenRequestException: The token expired on 04/17/2025 11:11:15. Current server time is 04/17/2025 11:26:09.
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass7_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+   at GitHub.Runner.Listener.MessageListener.GetNextMessageAsync(CancellationToken token)
+[2025-04-17 11:06:15Z INFO MessageListener] Retriable exception: The token expired on 04/17/2025 11:11:15. Current server time is 04/17/2025 11:26:09.
+[2025-04-17 11:06:15Z ERR  Terminal] WRITE ERROR: 2025-04-17 11:06:15Z: Runner connect error: The token expired on 04/17/2025 11:11:15. Current server time is 04/17/2025 11:26:09.. Retrying until reconnected.
+[2025-04-17 11:06:15Z INFO RunnerServer] Refresh MessageQueue VssConnection to get on a different AFD node.
+[2025-04-17 11:06:15Z INFO RunnerServer] EstablishVssConnection
+[2025-04-17 11:06:15Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-04-17 11:06:15Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-04-17 11:06:16Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-04-17 11:06:16Z INFO MessageListener] Sleeping for 28.273 seconds before retrying.
+[2025-04-17 11:06:44Z INFO MessageListener] Message '0' received from session '02c1ae47-d561-4896-ac64-30c24b2da92e'.
+[2025-04-17 11:06:44Z ERR  Runner] Received message 0 with unsupported message type BrokerMigration.
+[2025-04-17 11:06:46Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 11:06:46Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fc1cf2da-3872-4d18-92a9-f6155d9e1df6 failed. HTTP Status: BadRequest
+[2025-04-17 11:06:46Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-17 11:06:46Z ERR  BrokerServer] Catch exception during request
+[2025-04-17 11:06:46Z ERR  BrokerServer] GitHub.Services.OAuth.VssOAuthTokenRequestException: The token expired on 04/17/2025 11:11:46. Current server time is 04/17/2025 11:26:40.
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass7_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+[2025-04-17 11:06:46Z WARN BrokerServer] Back off 8.914 seconds before next retry. 4 attempt left.
+[2025-04-17 11:06:55Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 11:06:56Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fc1cf2da-3872-4d18-92a9-f6155d9e1df6 failed. HTTP Status: BadRequest
+[2025-04-17 11:06:56Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-17 11:06:56Z ERR  BrokerServer] Catch exception during request
+[2025-04-17 11:06:56Z ERR  BrokerServer] GitHub.Services.OAuth.VssOAuthTokenRequestException: The token expired on 04/17/2025 11:11:56. Current server time is 04/17/2025 11:26:50.
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass7_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+[2025-04-17 11:06:56Z WARN BrokerServer] Back off 7.13 seconds before next retry. 3 attempt left.
+[2025-04-17 11:07:03Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 11:07:04Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fc1cf2da-3872-4d18-92a9-f6155d9e1df6 failed. HTTP Status: BadRequest
+[2025-04-17 11:07:04Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-17 11:07:04Z ERR  BrokerServer] Catch exception during request
+[2025-04-17 11:07:04Z ERR  BrokerServer] GitHub.Services.OAuth.VssOAuthTokenRequestException: The token expired on 04/17/2025 11:12:04. Current server time is 04/17/2025 11:26:58.
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass7_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+[2025-04-17 11:07:04Z WARN BrokerServer] Back off 7.275 seconds before next retry. 2 attempt left.
+[2025-04-17 11:07:12Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 11:07:12Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fc1cf2da-3872-4d18-92a9-f6155d9e1df6 failed. HTTP Status: BadRequest
+[2025-04-17 11:07:12Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-17 11:07:12Z ERR  BrokerServer] Catch exception during request
+[2025-04-17 11:07:12Z ERR  BrokerServer] GitHub.Services.OAuth.VssOAuthTokenRequestException: The token expired on 04/17/2025 11:12:12. Current server time is 04/17/2025 11:27:06.
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass7_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+[2025-04-17 11:07:12Z WARN BrokerServer] Back off 8.856 seconds before next retry. 1 attempt left.
+[2025-04-17 11:07:21Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 11:07:22Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fc1cf2da-3872-4d18-92a9-f6155d9e1df6 failed. HTTP Status: BadRequest
+[2025-04-17 11:07:22Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-17 11:07:22Z ERR  MessageListener] Catch exception during get next message.
+[2025-04-17 11:07:22Z ERR  MessageListener] GitHub.Services.OAuth.VssOAuthTokenRequestException: The token expired on 04/17/2025 11:12:22. Current server time is 04/17/2025 11:27:16.
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass7_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+   at GitHub.Runner.Listener.MessageListener.GetNextMessageAsync(CancellationToken token)
+[2025-04-17 11:07:22Z INFO MessageListener] Retriable exception: The token expired on 04/17/2025 11:12:22. Current server time is 04/17/2025 11:27:16.
+[2025-04-17 11:07:22Z ERR  Terminal] WRITE ERROR: 2025-04-17 11:07:22Z: Runner connect error: The token expired on 04/17/2025 11:12:22. Current server time is 04/17/2025 11:27:16.. Retrying until reconnected.
+[2025-04-17 11:07:22Z INFO RunnerServer] Refresh MessageQueue VssConnection to get on a different AFD node.
+[2025-04-17 11:07:22Z INFO RunnerServer] EstablishVssConnection
+[2025-04-17 11:07:22Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-04-17 11:07:22Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-04-17 11:07:23Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-04-17 11:07:23Z INFO MessageListener] Sleeping for 18.857 seconds before retrying.
+[2025-04-17 11:07:42Z INFO MessageListener] Message '0' received from session '02c1ae47-d561-4896-ac64-30c24b2da92e'.
+[2025-04-17 11:07:42Z ERR  Runner] Received message 0 with unsupported message type BrokerMigration.
+[2025-04-17 11:07:43Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 11:07:44Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fc1cf2da-3872-4d18-92a9-f6155d9e1df6 failed. HTTP Status: BadRequest
+[2025-04-17 11:07:44Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-17 11:07:44Z ERR  BrokerServer] Catch exception during request
+[2025-04-17 11:07:44Z ERR  BrokerServer] GitHub.Services.OAuth.VssOAuthTokenRequestException: The token expired on 04/17/2025 11:12:44. Current server time is 04/17/2025 11:27:38.
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass7_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+[2025-04-17 11:07:44Z WARN BrokerServer] Back off 9.567 seconds before next retry. 4 attempt left.
+[2025-04-17 11:07:54Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 11:07:54Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fc1cf2da-3872-4d18-92a9-f6155d9e1df6 failed. HTTP Status: BadRequest
+[2025-04-17 11:07:54Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-17 11:07:54Z ERR  BrokerServer] Catch exception during request
+[2025-04-17 11:07:54Z ERR  BrokerServer] GitHub.Services.OAuth.VssOAuthTokenRequestException: The token expired on 04/17/2025 11:12:54. Current server time is 04/17/2025 11:27:48.
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass7_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+[2025-04-17 11:07:54Z WARN BrokerServer] Back off 12.123 seconds before next retry. 3 attempt left.
+[2025-04-17 11:08:07Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 11:08:07Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fc1cf2da-3872-4d18-92a9-f6155d9e1df6 failed. HTTP Status: BadRequest
+[2025-04-17 11:08:07Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-17 11:08:07Z ERR  BrokerServer] Catch exception during request
+[2025-04-17 11:08:07Z ERR  BrokerServer] GitHub.Services.OAuth.VssOAuthTokenRequestException: The token expired on 04/17/2025 11:13:07. Current server time is 04/17/2025 11:28:01.
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass7_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+[2025-04-17 11:08:07Z WARN BrokerServer] Back off 10.475 seconds before next retry. 2 attempt left.
+[2025-04-17 11:08:18Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 11:08:18Z ERR  GitHubActionsService] POST request to https://tokenghub.actions.githubusercontent.com/_apis/oauth2/token/fc1cf2da-3872-4d18-92a9-f6155d9e1df6 failed. HTTP Status: BadRequest
+[2025-04-17 11:08:18Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-17 11:08:18Z ERR  BrokerServer] Catch exception during request
+[2025-04-17 11:08:18Z ERR  BrokerServer] GitHub.Services.OAuth.VssOAuthTokenRequestException: The token expired on 04/17/2025 11:13:18. Current server time is 04/17/2025 11:28:12.
+   at GitHub.Services.OAuth.VssOAuthTokenProvider.OnGetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenOperation.GetTokenAsync(VssTraceActivity traceActivity)
+   at GitHub.Services.Common.IssuedTokenProvider.GetTokenAsync(IssuedToken failedToken, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass7_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+[2025-04-17 11:08:18Z WARN BrokerServer] Back off 7.497 seconds before next retry. 1 attempt left.
+[2025-04-17 11:28:20Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/aprelix/courseproject/courseproject/actions-runner/.credentials_rsaparams
+[2025-04-17 11:28:21Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-17 11:29:28Z INFO Terminal] WRITE LINE: Exiting...
+[2025-04-17 11:29:28Z INFO ConfigurationStore] IsServiceConfigured()
+[2025-04-17 11:29:28Z INFO ConfigurationStore] IsServiceConfigured: False
+[2025-04-17 11:29:28Z INFO HostContext] Runner will be shutdown for UserCancelled
+[2025-04-17 11:29:28Z WARN GitHubActionsService] GET request to https://broker.actions.githubusercontent.com/message?sessionId=02c1ae47-d561-4896-ac64-30c24b2da92e&status=Online&runnerVersion=2.323.0&os=Linux&architecture=ARM64&disableUpdate=false has been cancelled.
+[2025-04-17 11:29:28Z ERR  BrokerServer] Catch exception during request
+[2025-04-17 11:29:28Z ERR  BrokerServer] System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: The read operation failed, see inner exception.
+ ---> System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'System.Net.Sockets.NetworkStream'.
+   at System.Net.Sockets.NetworkStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass7_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+[2025-04-17 11:29:28Z ERR  BrokerServer] #####################################################
+[2025-04-17 11:29:28Z ERR  BrokerServer] System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: The read operation failed, see inner exception.
+ ---> System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'System.Net.Sockets.NetworkStream'.
+   at System.Net.Sockets.NetworkStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+[2025-04-17 11:29:28Z ERR  BrokerServer] #####################################################
+[2025-04-17 11:29:28Z ERR  BrokerServer] System.IO.IOException: The read operation failed, see inner exception.
+ ---> System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'System.Net.Sockets.NetworkStream'.
+   at System.Net.Sockets.NetworkStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+[2025-04-17 11:29:28Z ERR  BrokerServer] #####################################################
+[2025-04-17 11:29:28Z ERR  BrokerServer] System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'System.Net.Sockets.NetworkStream'.
+   at System.Net.Sockets.NetworkStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+[2025-04-17 11:29:28Z WARN BrokerServer] Back off 12.56 seconds before next retry. 4 attempt left.
+[2025-04-17 11:29:28Z INFO MessageListener] Get next message has been cancelled.
+[2025-04-17 11:29:28Z INFO JobDispatcher] Shutting down JobDispatcher. Make sure all WorkerDispatcher has finished.
+[2025-04-17 11:29:28Z INFO JobDispatcher] Ensure WorkerDispatcher for job 6177cfdc-515f-5950-8077-fb8955e65a8b run to finish, cancel any running job.
+[2025-04-17 11:29:28Z INFO JobDispatcher] Job request 6177cfdc-515f-5950-8077-fb8955e65a8b processed succeed.
+[2025-04-17 11:29:28Z INFO Runner] Deleting Runner Session...
+[2025-04-17 11:29:29Z INFO Listener] Runner execution been cancelled.
