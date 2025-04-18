@@ -1,0 +1,3316 @@
+[2025-04-18 11:58:30Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-04-18 11:58:30Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:30Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:30Z INFO HostContext] Well known config file 'Credentials': '/home/aprelix/courseproject/courseproject/actions-runner/.credentials'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:31Z INFO HostContext] Well known config file 'Runner': '/home/aprelix/courseproject/courseproject/actions-runner/.runner'
+[2025-04-18 11:58:31Z INFO Worker] Version: 2.323.0
+[2025-04-18 11:58:31Z INFO Worker] Commit: d8b82f44a9ec0258904d5869ae683c31d5aac299
+[2025-04-18 11:58:31Z INFO Worker] Culture: en-US
+[2025-04-18 11:58:31Z INFO Worker] UI Culture: en-US
+[2025-04-18 11:58:31Z INFO Worker] Waiting to receive the job message from the channel.
+[2025-04-18 11:58:31Z INFO ProcessChannel] Receiving message of length 20831, with hash '1b1a5808a06f7456581296585c4817d702e985b05f853e52860f7ea7494d1790'
+[2025-04-18 11:58:31Z INFO Worker] Message received.
+[2025-04-18 11:58:31Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/main.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v3",
+        "repositoryType": "GitHub"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 13,
+        "col": 15,
+        "lit": "Checkout code"
+      },
+      "contextName": "__actions_checkout",
+      "condition": "success()",
+      "id": "575784d3-b1c1-46f4-9812-df410d812754",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 16,
+        "col": 15,
+        "lit": "Set up venv and install dependencies"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 17,
+              "col": 14,
+              "lit": "python3 -m venv venv\nsource venv/bin/activate\npip install -r requirements.txt\n"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "60da73a4-6df2-4d0f-8be4-a70d9219848d",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 22,
+        "col": 15,
+        "lit": "Run tests"
+      },
+      "contextName": "__run_2",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 23,
+              "col": 14,
+              "lit": "pytest"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "1b58d3f0-450f-4825-ae12-f44ba9371d2d",
+      "name": "__run_2"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 25,
+        "col": 15,
+        "lit": "Build Docker image"
+      },
+      "contextName": "__run_3",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 26,
+              "col": 14,
+              "lit": "docker build -t my-python-app ."
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "781c90a0-d8dd-4200-8c70-bc407ac97737",
+      "name": "__run_3"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 28,
+        "col": 15,
+        "lit": "Stop previous container"
+      },
+      "contextName": "__run_4",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 29,
+              "col": 14,
+              "lit": "docker stop my-python-app || true"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "45ce7b19-fc88-41d3-8b5a-19ed4e8c0f59",
+      "name": "__run_4"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 31,
+        "col": 15,
+        "lit": "Remove previous container"
+      },
+      "contextName": "__run_5",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 32,
+              "col": 14,
+              "lit": "docker rm my-python-app || true"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "77bde1b1-f075-4247-8580-e5499be94417",
+      "name": "__run_5"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 34,
+        "col": 15,
+        "lit": "Run new container"
+      },
+      "contextName": "__run_6",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 35,
+              "col": 14,
+              "lit": "docker run -d -p 8080:80 --name my-python-app my-python-app"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "dc2422ab-0bee-46bf-98c6-65ca22ee9175",
+      "name": "__run_6"
+    }
+  ],
+  "variables": {
+    "Actions.EnableHttpRedirects": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode16Action": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "DistributedTask.DetailUntarFailure": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnableJobServerQueueTelemetry": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode20": {
+      "value": "true"
+    },
+    "DistributedTask.LogTemplateErrorsAsDebugMessages": {
+      "value": "true"
+    },
+    "DistributedTask.MarkJobAsFailedOnWorkerCrash": {
+      "value": "true"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.UseActionArchiveCache": {
+      "value": "true"
+    },
+    "DistributedTask.UseWhich2": {
+      "value": "true"
+    },
+    "RunService.FixEmbeddedIssues": {
+      "value": "true"
+    },
+    "actions_skip_retry_complete_job_upon_known_errors": {
+      "value": "true"
+    },
+    "actions_uses_cache_service_v2": {
+      "value": "true"
+    },
+    "github_token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.from_run_service": {
+      "value": "true"
+    },
+    "system.github.job": {
+      "value": "build-deploy"
+    },
+    "system.github.launch_endpoint": {
+      "value": "https://launch.actions.githubusercontent.com"
+    },
+    "system.github.results_endpoint": {
+      "value": "https://results-receiver.actions.githubusercontent.com/"
+    },
+    "system.github.results_upload_with_sdk": {
+      "value": "true"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Contents\":\"read\",\"Metadata\":\"read\",\"Packages\":\"read\"}"
+    },
+    "system.orchestrationId": {
+      "value": "2df47372-3eb5-4c7a-9c3d-a5cf40e293ea.build-deploy.__default"
+    },
+    "system.phaseDisplayName": {
+      "value": "build-deploy"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    }
+  },
+  "messageType": "RunnerJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "actions",
+    "version": 0,
+    "planId": "2df47372-3eb5-4c7a-9c3d-a5cf40e293ea",
+    "planGroup": null,
+    "artifactUri": null,
+    "artifactLocation": null,
+    "definition": null,
+    "owner": null
+  },
+  "timeline": {
+    "id": "2df47372-3eb5-4c7a-9c3d-a5cf40e293ea",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "6e30ee98-957f-54e7-820c-6eeb5d332908",
+  "jobDisplayName": "build-deploy",
+  "jobName": "__default",
+  "requestId": 0,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "",
+          "ServerName": "",
+          "CacheServerUrl": "https://acghubeus1.actions.githubusercontent.com/0wQjaOheEfxSLcxUXTTDf7v2W8Oi9QWFpSBZRbURgOKlg08FeQ/",
+          "FeedStreamUrl": "wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock",
+          "ResultsServiceUrl": "https://results-receiver.actions.githubusercontent.com/",
+          "PipelinesServiceUrl": "https://pipelinesghubeus5.actions.githubusercontent.com/0wQjaOheEfxSLcxUXTTDf7v2W8Oi9QWFpSBZRbURgOKlg08FeQ/",
+          "GenerateIdTokenUrl": ""
+        },
+        "name": "SystemVssConnection",
+        "url": "https://run-actions-3-azure-eastus.actions.githubusercontent.com/40/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": "***"
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "da6e854fd41729e1388defee458c2b38077e6ea5"
+        },
+        {
+          "k": "repository",
+          "v": "grisha-topolev/courseproject"
+        },
+        {
+          "k": "repository_owner",
+          "v": "grisha-topolev"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "113539357"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/grisha-topolev/courseproject.git"
+        },
+        {
+          "k": "run_id",
+          "v": "14534760868"
+        },
+        {
+          "k": "run_number",
+          "v": "10"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "actor_id",
+          "v": "113539357"
+        },
+        {
+          "k": "actor",
+          "v": "grisha-topolev"
+        },
+        {
+          "k": "workflow",
+          "v": "CI/CD Pipeline"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "main"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "da6e854fd41729e1388defee458c2b38077e6ea5"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "c54f0ec8c25c2bc916fca011fdfd5daa22888a4c"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "gorbacvlad81@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "grisha-topolev"
+                              },
+                              {
+                                "k": "username",
+                                "v": "grisha-topolev"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "gorbacvlad81@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "grisha-topolev"
+                              },
+                              {
+                                "k": "username",
+                                "v": "grisha-topolev"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "da6e854fd41729e1388defee458c2b38077e6ea5"
+                        },
+                        {
+                          "k": "message",
+                          "v": "pipeline fixed i hope"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2025-04-18T14:58:15+03:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "bc66e755b8c78ec90c9925e02b4ecf71ea747f5d"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/grisha-topolev/courseproject/commit/da6e854fd41729e1388defee458c2b38077e6ea5"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/grisha-topolev/courseproject/compare/c54f0ec8c25c...da6e854fd417"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "gorbacvlad81@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "grisha-topolev"
+                          },
+                          {
+                            "k": "username",
+                            "v": "grisha-topolev"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "gorbacvlad81@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "grisha-topolev"
+                          },
+                          {
+                            "k": "username",
+                            "v": "grisha-topolev"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "da6e854fd41729e1388defee458c2b38077e6ea5"
+                    },
+                    {
+                      "k": "message",
+                      "v": "pipeline fixed i hope"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2025-04-18T14:58:15+03:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "bc66e755b8c78ec90c9925e02b4ecf71ea747f5d"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/grisha-topolev/courseproject/commit/da6e854fd41729e1388defee458c2b38077e6ea5"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "113539357+grisha-topolev@users.noreply.github.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "grisha-topolev"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/grisha-topolev/courseproject.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1744659275.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": null
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "grisha-topolev/courseproject"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/grisha-topolev/courseproject.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/grisha-topolev/courseproject"
+                    },
+                    {
+                      "k": "id",
+                      "v": 966348546.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "JavaScript"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "courseproject"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOOZlPAg"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/113539357?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "113539357+grisha-topolev@users.noreply.github.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/grisha-topolev/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/grisha-topolev/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/grisha-topolev/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/grisha-topolev/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/grisha-topolev"
+                          },
+                          {
+                            "k": "id",
+                            "v": 113539357.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "grisha-topolev"
+                          },
+                          {
+                            "k": "name",
+                            "v": "grisha-topolev"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "U_kgDOBsR5HQ"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/grisha-topolev/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/grisha-topolev/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/grisha-topolev/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/grisha-topolev/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/grisha-topolev/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/grisha-topolev"
+                          },
+                          {
+                            "k": "user_view_type",
+                            "v": "public"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1744977505.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 150461.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:grisha-topolev/courseproject.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/grisha-topolev/courseproject"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2025-04-18T11:42:44Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/repos/grisha-topolev/courseproject"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/113539357?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/grisha-topolev/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/grisha-topolev/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/grisha-topolev/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/grisha-topolev/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/grisha-topolev"
+                    },
+                    {
+                      "k": "id",
+                      "v": 113539357.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "grisha-topolev"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "U_kgDOBsR5HQ"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/grisha-topolev/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/grisha-topolev/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/grisha-topolev/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/grisha-topolev/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/grisha-topolev/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/grisha-topolev"
+                    },
+                    {
+                      "k": "user_view_type",
+                      "v": "public"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "workflow_ref",
+          "v": "grisha-topolev/courseproject/.github/workflows/main.yml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "da6e854fd41729e1388defee458c2b38077e6ea5"
+        },
+        {
+          "k": "repository_id",
+          "v": "966348546"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "grisha-topolev"
+        }
+      ]
+    },
+    "inputs": {
+      "t": 2
+    },
+    "matrix": null,
+    "needs": {
+      "t": 2
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    },
+    "vars": {
+      "t": 2
+    }
+  },
+  "billingOwnerId": "U_kgDOBsR5HQ"
+}
+[2025-04-18 11:58:31Z INFO JobRunner] Job ID 6e30ee98-957f-54e7-820c-6eeb5d332908
+[2025-04-18 11:58:31Z INFO ConfigurationStore] currentAssemblyLocation: /home/aprelix/courseproject/courseproject/actions-runner/bin/Runner.Worker.dll
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:31Z INFO ConfigurationStore] binPath: /home/aprelix/courseproject/courseproject/actions-runner/bin
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:31Z INFO ConfigurationStore] RootFolder: /home/aprelix/courseproject/courseproject/actions-runner
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:31Z INFO HostContext] Well known config file 'Runner': '/home/aprelix/courseproject/courseproject/actions-runner/.runner'
+[2025-04-18 11:58:31Z INFO ConfigurationStore] ConfigFilePath: /home/aprelix/courseproject/courseproject/actions-runner/.runner
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:31Z INFO HostContext] Well known config file 'MigratedRunner': '/home/aprelix/courseproject/courseproject/actions-runner/.runner_migrated'
+[2025-04-18 11:58:31Z INFO ConfigurationStore] MigratedConfigFilePath: /home/aprelix/courseproject/courseproject/actions-runner/.runner_migrated
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:31Z INFO HostContext] Well known config file 'Credentials': '/home/aprelix/courseproject/courseproject/actions-runner/.credentials'
+[2025-04-18 11:58:31Z INFO ConfigurationStore] CredFilePath: /home/aprelix/courseproject/courseproject/actions-runner/.credentials
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:31Z INFO HostContext] Well known config file 'MigratedCredentials': '/home/aprelix/courseproject/courseproject/actions-runner/.credentials_migrated'
+[2025-04-18 11:58:31Z INFO ConfigurationStore] MigratedCredFilePath: /home/aprelix/courseproject/courseproject/actions-runner/.credentials_migrated
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:31Z INFO HostContext] Well known config file 'Service': '/home/aprelix/courseproject/courseproject/actions-runner/.service'
+[2025-04-18 11:58:31Z INFO ConfigurationStore] ServiceConfigFilePath: /home/aprelix/courseproject/courseproject/actions-runner/.service
+[2025-04-18 11:58:31Z INFO ConfigurationStore] Read setting file: 301 chars
+[2025-04-18 11:58:31Z INFO JobRunner] Initializing launch client
+[2025-04-18 11:58:31Z INFO JobServerQueue] Initializing results client
+[2025-04-18 11:58:31Z INFO ResultServer] Creating websocket client ...wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock
+[2025-04-18 11:58:31Z INFO ResultServer] Attempting to start websocket client with delay 00:00:00.
+[2025-04-18 11:58:31Z INFO JobServerQueue] Start process web console line queue.
+[2025-04-18 11:58:31Z INFO JobServerQueue] Start process file upload queue.
+[2025-04-18 11:58:31Z INFO JobServerQueue] Start results file upload queue.
+[2025-04-18 11:58:31Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-04-18 11:58:31Z INFO JobServerQueue] Start process timeline update queue.
+[2025-04-18 11:58:31Z INFO ExecutionContext] Initialize GitHub context
+[2025-04-18 11:58:31Z INFO ExecutionContext] Initialize Env context
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Diag': '/home/aprelix/courseproject/courseproject/actions-runner/_diag'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Diag': '/home/aprelix/courseproject/courseproject/actions-runner/_diag'
+[2025-04-18 11:58:31Z INFO JobRunner] Starting the job execution context.
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:58:31Z INFO JobRunner] Validating directory permissions for: '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Tools': '/home/aprelix/courseproject/courseproject/actions-runner/_work/_tool'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Temp': '/home/aprelix/courseproject/courseproject/actions-runner/_work/_temp'
+[2025-04-18 11:58:31Z INFO JobRunner] Getting job extension.
+[2025-04-18 11:58:31Z INFO JobRunner] Initialize job. Getting all job steps.
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Diag': '/home/aprelix/courseproject/courseproject/actions-runner/_diag'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Diag': '/home/aprelix/courseproject/courseproject/actions-runner/_diag'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:31Z INFO HostContext] Well known config file 'Credentials': '/home/aprelix/courseproject/courseproject/actions-runner/.credentials'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:31Z INFO HostContext] Well known config file 'SetupInfo': '/home/aprelix/courseproject/courseproject/actions-runner/.setup_info'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:58:31Z INFO PipelineDirectoryManager] Loading tracking config if exists: /home/aprelix/courseproject/courseproject/actions-runner/_work/_PipelineMapping/grisha-topolev/courseproject/PipelineFolder.json
+[2025-04-18 11:58:31Z INFO PipelineDirectoryManager] Updating job run properties.
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:58:31Z INFO JobExtension] Downloading actions
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:58:31Z INFO HostContext] Well known directory 'Actions': '/home/aprelix/courseproject/courseproject/actions-runner/_work/_actions'
+[2025-04-18 11:58:31Z INFO Worker] Listening for cancel message from the channel.
+[2025-04-18 11:58:31Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2025-04-18 11:58:32Z INFO ResultServer] Successfully started websocket client.
+[2025-04-18 11:58:32Z INFO JobServerQueue] Try to append 1 batches web console lines for record '95234897-1753-44a6-8df8-9ace667d6788', success rate: 1/1.
+[2025-04-18 11:58:32Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:32Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:32Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:58:32Z INFO HostContext] Well known directory 'Actions': '/home/aprelix/courseproject/courseproject/actions-runner/_work/_actions'
+[2025-04-18 11:58:32Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:32Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:32Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:58:32Z INFO HostContext] Well known directory 'Actions': '/home/aprelix/courseproject/courseproject/actions-runner/_work/_actions'
+[2025-04-18 11:58:32Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/tarball/f43a0e5ff2bd294095638e18286ca9a3d1956744' into /home/aprelix/courseproject/courseproject/actions-runner/_work/_actions/_temp_a18c1b33-5c99-4aa9-9a5e-278750c48be3/3cb3017e-da52-4ba6-97bb-c4ef3d8128f2.tar.gz.
+[2025-04-18 11:58:32Z INFO JobServerQueue] Try to append 1 batches web console lines for record '95234897-1753-44a6-8df8-9ace667d6788', success rate: 1/1.
+[2025-04-18 11:58:32Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2025-04-18 11:58:32Z INFO ActionManager] Request URL: https://api.github.com/repos/actions/checkout/tarball/f43a0e5ff2bd294095638e18286ca9a3d1956744 X-GitHub-Request-Id: 4296:BC61C:419B61:4DBE69:68023E68 Http Status: OK
+[2025-04-18 11:58:32Z INFO ActionManager] Which2: 'tar'
+[2025-04-18 11:58:33Z INFO ActionManager] Location: '/usr/bin/tar'
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper] Starting process:
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/tar'
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper]   Arguments: '-xzf "/home/aprelix/courseproject/courseproject/actions-runner/_work/_actions/_temp_a18c1b33-5c99-4aa9-9a5e-278750c48be3/3cb3017e-da52-4ba6-97bb-c4ef3d8128f2.tar.gz"'
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper]   Working directory: '/home/aprelix/courseproject/courseproject/actions-runner/_work/_actions/_temp_a18c1b33-5c99-4aa9-9a5e-278750c48be3/_staging'
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 7001.
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper] Process started with process id 7001, waiting for process exit.
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper] Finished process 7001 with exit code 0, and elapsed time 00:00:00.2720383.
+[2025-04-18 11:58:33Z INFO ActionManager] Finished getting action repository.
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Actions': '/home/aprelix/courseproject/courseproject/actions-runner/_work/_actions'
+[2025-04-18 11:58:33Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Actions': '/home/aprelix/courseproject/courseproject/actions-runner/_work/_actions'
+[2025-04-18 11:58:33Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 67,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 68,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-04-18 11:58:33Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Actions': '/home/aprelix/courseproject/courseproject/actions-runner/_work/_actions'
+[2025-04-18 11:58:33Z INFO ActionManager] Load action that reference repository from '/home/aprelix/courseproject/courseproject/actions-runner/_work/_actions/actions/checkout/v3'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Actions': '/home/aprelix/courseproject/courseproject/actions-runner/_work/_actions'
+[2025-04-18 11:58:33Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 67,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 68,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-04-18 11:58:33Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-04-18 11:58:33Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-04-18 11:58:33Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-04-18 11:58:33Z INFO JobExtension] Adding .
+[2025-04-18 11:58:33Z INFO JobExtension] Adding .
+[2025-04-18 11:58:33Z INFO JobExtension] Adding .
+[2025-04-18 11:58:33Z INFO JobExtension] Adding .
+[2025-04-18 11:58:33Z INFO JobExtension] Adding .
+[2025-04-18 11:58:33Z INFO JobExtension] Adding .
+[2025-04-18 11:58:33Z INFO JobExtension] Adding .
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Diag': '/home/aprelix/courseproject/courseproject/actions-runner/_diag'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Diag': '/home/aprelix/courseproject/courseproject/actions-runner/_diag'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Diag': '/home/aprelix/courseproject/courseproject/actions-runner/_diag'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Diag': '/home/aprelix/courseproject/courseproject/actions-runner/_diag'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Diag': '/home/aprelix/courseproject/courseproject/actions-runner/_diag'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Diag': '/home/aprelix/courseproject/courseproject/actions-runner/_diag'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Diag': '/home/aprelix/courseproject/courseproject/actions-runner/_diag'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Diag': '/home/aprelix/courseproject/courseproject/actions-runner/_diag'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Diag': '/home/aprelix/courseproject/courseproject/actions-runner/_diag'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Diag': '/home/aprelix/courseproject/courseproject/actions-runner/_diag'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Diag': '/home/aprelix/courseproject/courseproject/actions-runner/_diag'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Diag': '/home/aprelix/courseproject/courseproject/actions-runner/_diag'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Diag': '/home/aprelix/courseproject/courseproject/actions-runner/_diag'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Diag': '/home/aprelix/courseproject/courseproject/actions-runner/_diag'
+[2025-04-18 11:58:33Z INFO JobExtension] Total accessible running process: 220.
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:58:33Z INFO JobExtension] Start checking service connectivity in background.
+[2025-04-18 11:58:33Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "95234897-1753-44a6-8df8-9ace667d6788",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 3,
+  "startTime": "2025-04-18T11:58:31.4688801Z",
+  "finishTime": "2025-04-18T11:58:33.6793546Z"
+}.
+[2025-04-18 11:58:33Z INFO JobRunner] Total job steps: 7.
+[2025-04-18 11:58:33Z INFO JobRunner] Run all job steps.
+[2025-04-18 11:58:33Z INFO StepsRunner] Processing step: DisplayName='Checkout code'
+[2025-04-18 11:58:33Z INFO StepsRunner] Evaluating: success()
+[2025-04-18 11:58:33Z INFO StepsRunner] Result: true
+[2025-04-18 11:58:33Z INFO StepsRunner] Starting the step.
+[2025-04-18 11:58:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record '95234897-1753-44a6-8df8-9ace667d6788', success rate: 1/1.
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Actions': '/home/aprelix/courseproject/courseproject/actions-runner/_work/_actions'
+[2025-04-18 11:58:33Z INFO ActionManager] Load action that reference repository from '/home/aprelix/courseproject/courseproject/actions-runner/_work/_actions/actions/checkout/v3'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Actions': '/home/aprelix/courseproject/courseproject/actions-runner/_work/_actions'
+[2025-04-18 11:58:33Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 67,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 68,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-04-18 11:58:33Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-04-18 11:58:33Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-04-18 11:58:33Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-04-18 11:58:33Z INFO ExecutionContext] Reserve record order 9 to 16 for post job actions.
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Diag': '/home/aprelix/courseproject/courseproject/actions-runner/_diag'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Diag': '/home/aprelix/courseproject/courseproject/actions-runner/_diag'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Temp': '/home/aprelix/courseproject/courseproject/actions-runner/_work/_temp'
+[2025-04-18 11:58:33Z INFO ExecutionContext] Write event payload to /home/aprelix/courseproject/courseproject/actions-runner/_work/_temp/_github_workflow/event.json
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Temp': '/home/aprelix/courseproject/courseproject/actions-runner/_work/_temp'
+[2025-04-18 11:58:33Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-04-18 11:58:33Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathFileCommand, Runner.Worker
+[2025-04-18 11:58:33Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvFileCommand, Runner.Worker
+[2025-04-18 11:58:33Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.CreateStepSummaryCommand, Runner.Worker
+[2025-04-18 11:58:33Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateFileCommand, Runner.Worker
+[2025-04-18 11:58:33Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputFileCommand, Runner.Worker
+[2025-04-18 11:58:33Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "grisha-topolev/courseproject"
+}
+[2025-04-18 11:58:33Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2025-04-18 11:58:33Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2025-04-18 11:58:33Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2025-04-18 11:58:33Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2025-04-18 11:58:33Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2025-04-18 11:58:33Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2025-04-18 11:58:33Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2025-04-18 11:58:33Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2025-04-18 11:58:33Z INFO ActionManifestManager] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 60,
+  "col": 14,
+  "lit": ""
+}
+[2025-04-18 11:58:33Z INFO ActionManifestManager] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": "true"
+}
+[2025-04-18 11:58:33Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 67,
+  "col": 14,
+  "lit": "1"
+}
+[2025-04-18 11:58:33Z INFO ActionManifestManager] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2025-04-18 11:58:33Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "false"
+}
+[2025-04-18 11:58:33Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "false"
+}
+[2025-04-18 11:58:33Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "true"
+}
+[2025-04-18 11:58:33Z INFO ActionManifestManager] Input 'github-server-url': default value evaluate result: ""
+[2025-04-18 11:58:33Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-04-18 11:58:33Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.InternalPluginSetRepoPathCommandExtension, Runner.Worker
+[2025-04-18 11:58:33Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvCommandExtension, Runner.Worker
+[2025-04-18 11:58:33Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputCommandExtension, Runner.Worker
+[2025-04-18 11:58:33Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateCommandExtension, Runner.Worker
+[2025-04-18 11:58:33Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathCommandExtension, Runner.Worker
+[2025-04-18 11:58:33Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMaskCommandExtension, Runner.Worker
+[2025-04-18 11:58:33Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMatcherCommandExtension, Runner.Worker
+[2025-04-18 11:58:33Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.RemoveMatcherCommandExtension, Runner.Worker
+[2025-04-18 11:58:33Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.WarningCommandExtension, Runner.Worker
+[2025-04-18 11:58:33Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ErrorCommandExtension, Runner.Worker
+[2025-04-18 11:58:33Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.NoticeCommandExtension, Runner.Worker
+[2025-04-18 11:58:33Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.DebugCommandExtension, Runner.Worker
+[2025-04-18 11:58:33Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.GroupCommandExtension, Runner.Worker
+[2025-04-18 11:58:33Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EndGroupCommandExtension, Runner.Worker
+[2025-04-18 11:58:33Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EchoCommandExtension, Runner.Worker
+[2025-04-18 11:58:33Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-04-18 11:58:33Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-04-18 11:58:33Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-04-18 11:58:33Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-04-18 11:58:33Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-04-18 11:58:33Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-04-18 11:58:33Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-04-18 11:58:33Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-04-18 11:58:33Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-04-18 11:58:33Z INFO ActionCommandManager] Register action command extension for command error
+[2025-04-18 11:58:33Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-04-18 11:58:33Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-04-18 11:58:33Z INFO ActionCommandManager] Register action command extension for command group
+[2025-04-18 11:58:33Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-04-18 11:58:33Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:33Z INFO HostContext] Well known directory 'Externals': '/home/aprelix/courseproject/courseproject/actions-runner/externals'
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper] Starting process:
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper]   File name: '/home/aprelix/courseproject/courseproject/actions-runner/externals/node20/bin/node'
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper]   Arguments: '"/home/aprelix/courseproject/courseproject/actions-runner/_work/_actions/actions/checkout/v3/dist/index.js"'
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper]   Working directory: '/home/aprelix/courseproject/courseproject/actions-runner/_work/courseproject/courseproject'
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 7005.
+[2025-04-18 11:58:33Z INFO ProcessInvokerWrapper] Process started with process id 7005, waiting for process exit.
+[2025-04-18 11:58:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:34Z INFO AddMaskCommandExtension] Add new secret mask with length of 76
+[2025-04-18 11:58:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:34Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-04-18 11:58:34Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /home/aprelix/courseproject/courseproject/actions-runner/_diag/blocks/2df47372-3eb5-4c7a-9c3d-a5cf40e293ea_95234897-1753-44a6-8df8-9ace667d6788.1
+[2025-04-18 11:58:34Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-04-18 11:58:35Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:35Z INFO JobServerQueue] Try to append 3 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 3/3.
+[2025-04-18 11:58:36Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-04-18 11:58:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:38Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:38Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:39Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:40Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:41Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:42Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:43Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:43Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:43Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:58:43Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:44Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:46Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:49Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:50Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:51Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:53Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:53Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:53Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:58:53Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:58:53Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:58:53Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:54Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:54Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:54Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:56Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:57Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:57Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:57Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:58Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:58Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:58:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:59:01Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:59:01Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:59:02Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:59:03Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:59:03Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:59:03Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:59:04Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:59:05Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:59:06Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:59:07Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:59:08Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:59:08Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:59:08Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:59:08Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:59:09Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:59:09Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:59:09Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:59:10Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:59:10Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:59:11Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:59:11Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:59:13Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:59:13Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:59:13Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:59:13Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:59:13Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:59:13Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-18 11:59:13Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-18 11:59:13Z INFO ProcessInvokerWrapper] Finished process 7005 with exit code 0, and elapsed time 00:00:40.1109411.
+[2025-04-18 11:59:13Z INFO JobServerQueue] Try to append 1 batches web console lines for record '575784d3-b1c1-46f4-9812-df410d812754', success rate: 1/1.
+[2025-04-18 11:59:13Z INFO CreateStepSummaryCommand] Step Summary file (/home/aprelix/courseproject/courseproject/actions-runner/_work/_temp/_runner_file_commands/step_summary_e38f1706-7de8-4e47-9eb2-10bb83214bd3) is empty; skipping attachment upload
+[2025-04-18 11:59:13Z INFO StepsRunner] Step result: 
+[2025-04-18 11:59:13Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v3",
+  "type": "node20",
+  "stage": "Main",
+  "stepId": "575784d3-b1c1-46f4-9812-df410d812754",
+  "stepContextName": "__actions_checkout",
+  "hasPreStep": false,
+  "hasPostStep": true,
+  "result": "succeeded",
+  "errorMessages": [
+    "no submodule mapping found in .gitmodules for path 'actions-runner/_work/courseproject/courseproject'",
+    "Unable to clean or reset the repository. The repository will be recreated instead."
+  ],
+  "executionTimeInSeconds": 41,
+  "startTime": "2025-04-18T11:58:33.7005996Z",
+  "finishTime": "2025-04-18T11:59:13.9621486Z"
+}.
+[2025-04-18 11:59:13Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-04-18 11:59:13Z INFO StepsRunner] Current state: job state = ''
+[2025-04-18 11:59:13Z INFO StepsRunner] Processing step: DisplayName='Set up venv and install dependencies'
+[2025-04-18 11:59:13Z INFO StepsRunner] Evaluating: success()
+[2025-04-18 11:59:13Z INFO StepsRunner] Result: true
+[2025-04-18 11:59:13Z INFO StepsRunner] Starting the step.
+[2025-04-18 11:59:13Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:59:13Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:59:13Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:59:13Z INFO HostContext] Well known directory 'Temp': '/home/aprelix/courseproject/courseproject/actions-runner/_work/_temp'
+[2025-04-18 11:59:13Z INFO ExecutionContext] Write event payload to /home/aprelix/courseproject/courseproject/actions-runner/_work/_temp/_github_workflow/event.json
+[2025-04-18 11:59:13Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:59:13Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:59:13Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:59:13Z INFO HostContext] Well known directory 'Temp': '/home/aprelix/courseproject/courseproject/actions-runner/_work/_temp'
+[2025-04-18 11:59:13Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-04-18 11:59:13Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-04-18 11:59:13Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-04-18 11:59:13Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-04-18 11:59:13Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-04-18 11:59:13Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-04-18 11:59:13Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-04-18 11:59:13Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-04-18 11:59:13Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-04-18 11:59:13Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-04-18 11:59:13Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-04-18 11:59:14Z INFO ActionCommandManager] Register action command extension for command error
+[2025-04-18 11:59:14Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-04-18 11:59:14Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-04-18 11:59:14Z INFO ActionCommandManager] Register action command extension for command group
+[2025-04-18 11:59:14Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-04-18 11:59:14Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-04-18 11:59:14Z INFO ScriptHandler] Which2: 'bash'
+[2025-04-18 11:59:14Z INFO ScriptHandler] Location: '/usr/bin/bash'
+[2025-04-18 11:59:14Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:59:14Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:59:14Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:59:14Z INFO HostContext] Well known directory 'Temp': '/home/aprelix/courseproject/courseproject/actions-runner/_work/_temp'
+[2025-04-18 11:59:14Z INFO ScriptHandler] Which2: 'bash'
+[2025-04-18 11:59:14Z INFO ScriptHandler] Location: '/usr/bin/bash'
+[2025-04-18 11:59:14Z INFO ProcessInvokerWrapper] Starting process:
+[2025-04-18 11:59:14Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/bash'
+[2025-04-18 11:59:14Z INFO ProcessInvokerWrapper]   Arguments: '-e /home/aprelix/courseproject/courseproject/actions-runner/_work/_temp/93e85c6f-9371-45e6-b262-b428223b4c58.sh'
+[2025-04-18 11:59:14Z INFO ProcessInvokerWrapper]   Working directory: '/home/aprelix/courseproject/courseproject/actions-runner/_work/courseproject/courseproject'
+[2025-04-18 11:59:14Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-04-18 11:59:14Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-04-18 11:59:14Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-04-18 11:59:14Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-04-18 11:59:14Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-04-18 11:59:14Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-04-18 11:59:14Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-04-18 11:59:14Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 7167.
+[2025-04-18 11:59:14Z INFO ProcessInvokerWrapper] Process started with process id 7167, waiting for process exit.
+[2025-04-18 11:59:14Z INFO JobServerQueue] Try to append 1 batches web console lines for record '60da73a4-6df2-4d0f-8be4-a70d9219848d', success rate: 1/1.
+[2025-04-18 11:59:14Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-04-18 11:59:14Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /home/aprelix/courseproject/courseproject/actions-runner/_diag/blocks/2df47372-3eb5-4c7a-9c3d-a5cf40e293ea_575784d3-b1c1-46f4-9812-df410d812754.1
+[2025-04-18 11:59:14Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-04-18 11:59:15Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-04-18 11:59:18Z INFO JobServerQueue] Try to append 1 batches web console lines for record '60da73a4-6df2-4d0f-8be4-a70d9219848d', success rate: 1/1.
+[2025-04-18 11:59:18Z INFO JobServerQueue] Try to append 1 batches web console lines for record '60da73a4-6df2-4d0f-8be4-a70d9219848d', success rate: 1/1.
+[2025-04-18 11:59:19Z INFO JobServerQueue] Try to append 1 batches web console lines for record '60da73a4-6df2-4d0f-8be4-a70d9219848d', success rate: 1/1.
+[2025-04-18 11:59:19Z INFO JobServerQueue] Try to append 1 batches web console lines for record '60da73a4-6df2-4d0f-8be4-a70d9219848d', success rate: 1/1.
+[2025-04-18 11:59:19Z INFO JobServerQueue] Try to append 1 batches web console lines for record '60da73a4-6df2-4d0f-8be4-a70d9219848d', success rate: 1/1.
+[2025-04-18 11:59:19Z INFO JobServerQueue] Try to append 1 batches web console lines for record '60da73a4-6df2-4d0f-8be4-a70d9219848d', success rate: 1/1.
+[2025-04-18 11:59:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record '60da73a4-6df2-4d0f-8be4-a70d9219848d', success rate: 1/1.
+[2025-04-18 11:59:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record '60da73a4-6df2-4d0f-8be4-a70d9219848d', success rate: 1/1.
+[2025-04-18 11:59:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record '60da73a4-6df2-4d0f-8be4-a70d9219848d', success rate: 1/1.
+[2025-04-18 11:59:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record '60da73a4-6df2-4d0f-8be4-a70d9219848d', success rate: 1/1.
+[2025-04-18 11:59:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record '60da73a4-6df2-4d0f-8be4-a70d9219848d', success rate: 1/1.
+[2025-04-18 11:59:22Z INFO JobServerQueue] Try to append 1 batches web console lines for record '60da73a4-6df2-4d0f-8be4-a70d9219848d', success rate: 1/1.
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper] Finished process 7167 with exit code 0, and elapsed time 00:00:08.3577847.
+[2025-04-18 11:59:22Z INFO CreateStepSummaryCommand] Step Summary file (/home/aprelix/courseproject/courseproject/actions-runner/_work/_temp/_runner_file_commands/step_summary_ceeb30aa-0498-4b2e-ab62-44049f444c47) is empty; skipping attachment upload
+[2025-04-18 11:59:22Z INFO StepsRunner] Step result: 
+[2025-04-18 11:59:22Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "sh",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "60da73a4-6df2-4d0f-8be4-a70d9219848d",
+  "stepContextName": "__run",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 9,
+  "startTime": "2025-04-18T11:59:13.9705463Z",
+  "finishTime": "2025-04-18T11:59:22.3795251Z"
+}.
+[2025-04-18 11:59:22Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-04-18 11:59:22Z INFO StepsRunner] Current state: job state = ''
+[2025-04-18 11:59:22Z INFO StepsRunner] Processing step: DisplayName='Run tests'
+[2025-04-18 11:59:22Z INFO StepsRunner] Evaluating: success()
+[2025-04-18 11:59:22Z INFO StepsRunner] Result: true
+[2025-04-18 11:59:22Z INFO StepsRunner] Starting the step.
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Temp': '/home/aprelix/courseproject/courseproject/actions-runner/_work/_temp'
+[2025-04-18 11:59:22Z INFO ExecutionContext] Write event payload to /home/aprelix/courseproject/courseproject/actions-runner/_work/_temp/_github_workflow/event.json
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Temp': '/home/aprelix/courseproject/courseproject/actions-runner/_work/_temp'
+[2025-04-18 11:59:22Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-04-18 11:59:22Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command error
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command group
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-04-18 11:59:22Z INFO ScriptHandler] Which2: 'bash'
+[2025-04-18 11:59:22Z INFO ScriptHandler] Location: '/usr/bin/bash'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Temp': '/home/aprelix/courseproject/courseproject/actions-runner/_work/_temp'
+[2025-04-18 11:59:22Z INFO ScriptHandler] Which2: 'bash'
+[2025-04-18 11:59:22Z INFO ScriptHandler] Location: '/usr/bin/bash'
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper] Starting process:
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper]   File name: '/usr/bin/bash'
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper]   Arguments: '-e /home/aprelix/courseproject/courseproject/actions-runner/_work/_temp/17060940-0997-4079-84e1-0e19ae33e4ec.sh'
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper]   Working directory: '/home/aprelix/courseproject/courseproject/actions-runner/_work/courseproject/courseproject'
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 7235.
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper] Process started with process id 7235, waiting for process exit.
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper] Finished process 7235 with exit code 127, and elapsed time 00:00:00.0135817.
+[2025-04-18 11:59:22Z INFO CreateStepSummaryCommand] Step Summary file (/home/aprelix/courseproject/courseproject/actions-runner/_work/_temp/_runner_file_commands/step_summary_f32d3e94-4a4b-4a83-8930-776e6658f582) is empty; skipping attachment upload
+[2025-04-18 11:59:22Z INFO StepsRunner] Step result: Failed
+[2025-04-18 11:59:22Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "sh",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "1b58d3f0-450f-4825-ae12-f44ba9371d2d",
+  "stepContextName": "__run_2",
+  "result": "failed",
+  "errorMessages": [
+    "Process completed with exit code 127."
+  ],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-04-18T11:59:22.3819712Z",
+  "finishTime": "2025-04-18T11:59:22.4137752Z"
+}.
+[2025-04-18 11:59:22Z INFO StepsRunner] Update job result with current step result 'Failed'.
+[2025-04-18 11:59:22Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-04-18 11:59:22Z INFO StepsRunner] Processing step: DisplayName='Build Docker image'
+[2025-04-18 11:59:22Z INFO StepsRunner] Evaluating: success()
+[2025-04-18 11:59:22Z INFO StepsRunner] Result: false
+[2025-04-18 11:59:22Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-04-18 11:59:22Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-04-18 11:59:22Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-04-18 11:59:22Z INFO StepsRunner] Processing step: DisplayName='Stop previous container'
+[2025-04-18 11:59:22Z INFO StepsRunner] Evaluating: success()
+[2025-04-18 11:59:22Z INFO StepsRunner] Result: false
+[2025-04-18 11:59:22Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-04-18 11:59:22Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-04-18 11:59:22Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-04-18 11:59:22Z INFO StepsRunner] Processing step: DisplayName='Remove previous container'
+[2025-04-18 11:59:22Z INFO StepsRunner] Evaluating: success()
+[2025-04-18 11:59:22Z INFO StepsRunner] Result: false
+[2025-04-18 11:59:22Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-04-18 11:59:22Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-04-18 11:59:22Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-04-18 11:59:22Z INFO StepsRunner] Processing step: DisplayName='Run new container'
+[2025-04-18 11:59:22Z INFO StepsRunner] Evaluating: success()
+[2025-04-18 11:59:22Z INFO StepsRunner] Result: false
+[2025-04-18 11:59:22Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-04-18 11:59:22Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-04-18 11:59:22Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-04-18 11:59:22Z INFO StepsRunner] Processing step: DisplayName='Post Checkout code'
+[2025-04-18 11:59:22Z INFO StepsRunner] Evaluating: always()
+[2025-04-18 11:59:22Z INFO StepsRunner] Result: true
+[2025-04-18 11:59:22Z INFO StepsRunner] Starting the step.
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Actions': '/home/aprelix/courseproject/courseproject/actions-runner/_work/_actions'
+[2025-04-18 11:59:22Z INFO ActionManager] Load action that reference repository from '/home/aprelix/courseproject/courseproject/actions-runner/_work/_actions/actions/checkout/v3'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Actions': '/home/aprelix/courseproject/courseproject/actions-runner/_work/_actions'
+[2025-04-18 11:59:22Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 67,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 68,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-04-18 11:59:22Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-04-18 11:59:22Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-04-18 11:59:22Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Temp': '/home/aprelix/courseproject/courseproject/actions-runner/_work/_temp'
+[2025-04-18 11:59:22Z INFO ExecutionContext] Write event payload to /home/aprelix/courseproject/courseproject/actions-runner/_work/_temp/_github_workflow/event.json
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Work': '/home/aprelix/courseproject/courseproject/actions-runner/_work'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Temp': '/home/aprelix/courseproject/courseproject/actions-runner/_work/_temp'
+[2025-04-18 11:59:22Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-04-18 11:59:22Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "grisha-topolev/courseproject"
+}
+[2025-04-18 11:59:22Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2025-04-18 11:59:22Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2025-04-18 11:59:22Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2025-04-18 11:59:22Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2025-04-18 11:59:22Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2025-04-18 11:59:22Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2025-04-18 11:59:22Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2025-04-18 11:59:22Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2025-04-18 11:59:22Z INFO ActionManifestManager] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 60,
+  "col": 14,
+  "lit": ""
+}
+[2025-04-18 11:59:22Z INFO ActionManifestManager] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": "true"
+}
+[2025-04-18 11:59:22Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 67,
+  "col": 14,
+  "lit": "1"
+}
+[2025-04-18 11:59:22Z INFO ActionManifestManager] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2025-04-18 11:59:22Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "false"
+}
+[2025-04-18 11:59:22Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "false"
+}
+[2025-04-18 11:59:22Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "true"
+}
+[2025-04-18 11:59:22Z INFO ActionManifestManager] Input 'github-server-url': default value evaluate result: ""
+[2025-04-18 11:59:22Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command error
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command group
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-04-18 11:59:22Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Externals': '/home/aprelix/courseproject/courseproject/actions-runner/externals'
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper] Starting process:
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper]   File name: '/home/aprelix/courseproject/courseproject/actions-runner/externals/node20/bin/node'
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper]   Arguments: '"/home/aprelix/courseproject/courseproject/actions-runner/_work/_actions/actions/checkout/v3/dist/index.js"'
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper]   Working directory: '/home/aprelix/courseproject/courseproject/actions-runner/_work/courseproject/courseproject'
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper] Updated oom_score_adj to 500 for PID: 7237.
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper] Process started with process id 7237, waiting for process exit.
+[2025-04-18 11:59:22Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2025-04-18 11:59:22Z INFO JobServerQueue] Try to append 1 batches web console lines for record '1b58d3f0-450f-4825-ae12-f44ba9371d2d', success rate: 1/1.
+[2025-04-18 11:59:22Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8704dfd2-66f2-4ffe-95fb-685e58e51f98', success rate: 1/1.
+[2025-04-18 11:59:22Z INFO AddMaskCommandExtension] Add new secret mask with length of 32
+[2025-04-18 11:59:22Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8704dfd2-66f2-4ffe-95fb-685e58e51f98', success rate: 1/1.
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-04-18 11:59:22Z INFO ProcessInvokerWrapper] Finished process 7237 with exit code 0, and elapsed time 00:00:00.3616335.
+[2025-04-18 11:59:22Z INFO CreateStepSummaryCommand] Step Summary file (/home/aprelix/courseproject/courseproject/actions-runner/_work/_temp/_runner_file_commands/step_summary_f9e92835-eda0-421f-bb9d-2d058b239ae6) is empty; skipping attachment upload
+[2025-04-18 11:59:22Z INFO StepsRunner] Step result: 
+[2025-04-18 11:59:22Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v3",
+  "type": "node20",
+  "stage": "Post",
+  "stepId": "8704dfd2-66f2-4ffe-95fb-685e58e51f98",
+  "result": "succeeded",
+  "errorMessages": [
+    "The process '/usr/bin/git' failed with exit code 128"
+  ],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-04-18T11:59:22.4282391Z",
+  "finishTime": "2025-04-18T11:59:22.8214149Z"
+}.
+[2025-04-18 11:59:22Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-04-18 11:59:22Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-04-18 11:59:22Z INFO JobRunner] Finalize job.
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Diag': '/home/aprelix/courseproject/courseproject/actions-runner/_diag'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:59:22Z INFO HostContext] Well known directory 'Diag': '/home/aprelix/courseproject/courseproject/actions-runner/_diag'
+[2025-04-18 11:59:22Z INFO JobExtension] Initialize Env context
+[2025-04-18 11:59:22Z INFO JobExtension] Initialize steps context
+[2025-04-18 11:59:22Z INFO JobExtension] Total accessible running process: 220.
+[2025-04-18 11:59:22Z INFO JobExtension] Inspecting process environment variables. PID: 11 (kworker/u8:0-ext4-rsv-conversion)
+[2025-04-18 11:59:22Z INFO LinuxProcessExtensions] Read env from /proc/11/environ
+[2025-04-18 11:59:22Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/11/environ' is denied.
+[2025-04-18 11:59:22Z INFO JobExtension] Inspecting process environment variables. PID: 4935 (kworker/u8:3-events_unbound)
+[2025-04-18 11:59:22Z INFO LinuxProcessExtensions] Read env from /proc/4935/environ
+[2025-04-18 11:59:22Z WARN JobExtension] Ignore exception during read process environment variables: Access to the path '/proc/4935/environ' is denied.
+[2025-04-18 11:59:22Z INFO JobExtension] Inspecting process environment variables. PID: 6217 (Isolated Servic)
+[2025-04-18 11:59:22Z INFO LinuxProcessExtensions] Read env from /proc/6217/environ
+[2025-04-18 11:59:22Z INFO JobExtension] Inspecting process environment variables. PID: 7178 (Web Content)
+[2025-04-18 11:59:22Z INFO LinuxProcessExtensions] Read env from /proc/7178/environ
+[2025-04-18 11:59:22Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "complete_job",
+  "type": "runner",
+  "stage": "Post",
+  "stepId": "e349eabb-9131-4fed-a778-118246d6f06e",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-04-18T11:59:22.8455014Z",
+  "finishTime": "2025-04-18T11:59:22.9957702Z"
+}.
+[2025-04-18 11:59:22Z INFO JobRunner] Job result after all job steps finish: Failed
+[2025-04-18 11:59:22Z INFO JobRunner] Completing the job execution context.
+[2025-04-18 11:59:23Z INFO JobRunner] Shutting down the job server queue.
+[2025-04-18 11:59:23Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2025-04-18 11:59:23Z INFO JobServerQueue] All queue process task stopped.
+[2025-04-18 11:59:23Z INFO JobServerQueue] Try to append 1 batches web console lines for record '8704dfd2-66f2-4ffe-95fb-685e58e51f98', success rate: 1/1.
+[2025-04-18 11:59:23Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e349eabb-9131-4fed-a778-118246d6f06e', success rate: 1/1.
+[2025-04-18 11:59:23Z INFO JobServerQueue] Web console line queue drained.
+[2025-04-18 11:59:23Z INFO JobServerQueue] Uploading 3 files in one shot.
+[2025-04-18 11:59:23Z INFO JobServerQueue] Try to upload 3 log files or attachments, success rate: 3/3.
+[2025-04-18 11:59:23Z INFO JobServerQueue] File upload queue drained.
+[2025-04-18 11:59:23Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-04-18 11:59:23Z INFO JobServerQueue] Uploading 5 file(s) in one shot through results service.
+[2025-04-18 11:59:23Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-04-18 11:59:23Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /home/aprelix/courseproject/courseproject/actions-runner/_diag/blocks/2df47372-3eb5-4c7a-9c3d-a5cf40e293ea_60da73a4-6df2-4d0f-8be4-a70d9219848d.1
+[2025-04-18 11:59:23Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-04-18 11:59:23Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /home/aprelix/courseproject/courseproject/actions-runner/_diag/blocks/2df47372-3eb5-4c7a-9c3d-a5cf40e293ea_1b58d3f0-450f-4825-ae12-f44ba9371d2d.1
+[2025-04-18 11:59:24Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-04-18 11:59:24Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /home/aprelix/courseproject/courseproject/actions-runner/_diag/blocks/2df47372-3eb5-4c7a-9c3d-a5cf40e293ea_8704dfd2-66f2-4ffe-95fb-685e58e51f98.1
+[2025-04-18 11:59:24Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-04-18 11:59:24Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, /home/aprelix/courseproject/courseproject/actions-runner/_diag/blocks/2df47372-3eb5-4c7a-9c3d-a5cf40e293ea_e349eabb-9131-4fed-a778-118246d6f06e.1
+[2025-04-18 11:59:25Z INFO JobServerQueue] Got a job log file to send to results service.
+[2025-04-18 11:59:25Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, /home/aprelix/courseproject/courseproject/actions-runner/_diag/blocks/2df47372-3eb5-4c7a-9c3d-a5cf40e293ea_6e30ee98-957f-54e7-820c-6eeb5d332908.1
+[2025-04-18 11:59:26Z INFO JobServerQueue] Tried to upload 5 file(s) to results, success rate: 5/5.
+[2025-04-18 11:59:26Z INFO JobServerQueue] Results upload queue drained.
+[2025-04-18 11:59:26Z INFO JobServerQueue] Timeline update queue drained.
+[2025-04-18 11:59:26Z INFO JobServerQueue] Disposing job server ...
+[2025-04-18 11:59:26Z INFO JobServerQueue] Disposing results server ...
+[2025-04-18 11:59:26Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2025-04-18 11:59:26Z INFO TempDirectoryManager] Cleaning runner temp folder: /home/aprelix/courseproject/courseproject/actions-runner/_work/_temp
+[2025-04-18 11:59:26Z INFO HostContext] Well known directory 'Bin': '/home/aprelix/courseproject/courseproject/actions-runner/bin'
+[2025-04-18 11:59:26Z INFO HostContext] Well known directory 'Root': '/home/aprelix/courseproject/courseproject/actions-runner'
+[2025-04-18 11:59:26Z INFO HostContext] Well known directory 'Diag': '/home/aprelix/courseproject/courseproject/actions-runner/_diag'
+[2025-04-18 11:59:26Z INFO HostContext] Well known config file 'Telemetry': '/home/aprelix/courseproject/courseproject/actions-runner/_diag/.telemetry'
+[2025-04-18 11:59:26Z INFO JobRunner] Raising job completed against run service
+[2025-04-18 11:59:26Z INFO Worker] Job completed.
